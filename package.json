@@ -1,0 +1,42 @@
+{
+  "name": "@adntro/firestore",
+  "version": "0.1.0",
+  "description": "Google Cloud Firestore utilities",
+  "main": "./build/src/index.js",
+  "scripts": {
+    "test": "c8 mocha build/test",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adntro/firestore.git"
+  },
+  "keywords": [
+    "adntro",
+    "firestore"
+  ],
+  "author": "Adntro Genetics",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adntro/firestore/issues"
+  },
+  "homepage": "https://github.com/adntro/firestore#readme",
+  "peerDependencies": {
+    "@google-cloud/firestore": "^4.12.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.11.2",
+    "c8": "^7.7.3",
+    "gts": "^3.1.0",
+    "mocha": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {}
+}
